@@ -129,7 +129,7 @@ Then, make a histgram of the total number of steps taken each day.
 
     hist(totalsteps$Steps, main="Total Number of Steps taken Each Day", xlab="Steps", ylim= c(0,30))
 
-![](PA1_template_files/figure-markdown_strict/histgram-1.png)
+![](PA1_template_files/figure-markdown_strict/histgram-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps
 taken each day.
@@ -155,7 +155,7 @@ the average number of steps taken, averaged across all days (y-axis).
     with(pattern, plot(Intervals, AvgSteps, type="n", ylab="Average Number of Steps taken", xlab="Intervals",main="Time Series Plot"))
     with(pattern, lines(Intervals, AvgSteps, type="l",col="red"))
 
-![](PA1_template_files/figure-markdown_strict/timeplot-1.png)
+![](PA1_template_files/figure-markdown_strict/timeplot-1.png)<!-- -->
 
 Also, we could tell which 5-minute interval, on average across all the
 days in the dataset, contains the maximum number of steps.
@@ -194,7 +194,7 @@ to see the difference.
     hist(totalsteps$Steps, main="Total Number of Steps taken Each Day", xlab="Steps", ylim= c(0,40))
     hist(totalsteps2$Steps, main="Total Number of Steps taken Each Day(Revised)", xlab="Steps", ylim= c(0,40))
 
-![](PA1_template_files/figure-markdown_strict/compare-1.png)
+![](PA1_template_files/figure-markdown_strict/compare-1.png)<!-- -->
 
     #recalculate the mean and the median
     mean2 <- mean(totalsteps2$Steps)
@@ -232,6 +232,6 @@ all weekday days or weekend days (y-axis).
     library(lattice)
     xyplot(AvgSteps~Intervals|Type,data=pattern2,layout=c(1,2),type="l",ylab="Number of Steps")
 
-![](PA1_template_files/figure-markdown_strict/plot2-1.png)
+![](PA1_template_files/figure-markdown_strict/plot2-1.png)<!-- -->
 
 END
